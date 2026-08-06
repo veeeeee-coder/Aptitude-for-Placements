@@ -1,0 +1,453 @@
+# Direction Sense Test — One-Shot Placement Notes
+
+These notes are enough for **TCS, Infosys, Accenture, Cognizant, Wipro, Capgemini, Virtusa, Deloitte, HCL**, and most placement exams.
+
+---
+
+# 1. Compass (Memorize)
+
+```text
+          N
+          ↑
+     W ←     → E
+          ↓
+          S
+```
+
+---
+
+# 2. Right & Left Turns (MOST IMPORTANT)
+
+| Facing | Right | Left  |
+| ------ | ----- | ----- |
+| North  | East  | West  |
+| East   | South | North |
+| South  | West  | East  |
+| West   | North | South |
+
+### Shortcut
+
+* **Right = Clockwise ⏰**
+* **Left = Anti-clockwise ⏰**
+
+---
+
+# 3. The 4-Step Method (Use for EVERY Question)
+
+### Step 1
+
+Write the initial facing direction.
+
+Example:
+
+```
+Facing = North
+```
+
+---
+
+### Step 2
+
+After every turn, update the facing direction.
+
+Example:
+
+```
+Facing North
+
+Right → East
+
+Left → North
+```
+
+---
+
+### Step 3
+
+Maintain this scorecard.
+
+```
+North =
+
+South =
+
+East =
+
+West =
+```
+
+Update only the direction you walk.
+
+Example
+
+```
+Walk 10 North
+
+N = 10
+```
+
+```
+Walk 6 East
+
+E = 6
+```
+
+```
+Walk 4 South
+
+S = 4
+```
+
+---
+
+### Step 4
+
+Cancel opposite directions.
+
+```
+North = 10
+
+South = 4
+
+Remaining = North 6
+```
+
+```
+East = 15
+
+West = 8
+
+Remaining = East 7
+```
+
+Done.
+
+---
+
+# 4. Three Types of Questions (VERY IMPORTANT)
+
+## Type 1
+
+### Which direction is he facing?
+
+➡️ Answer the **last facing direction**.
+
+Example
+
+```
+Facing East
+
+Turn Left
+
+Facing North
+```
+
+Answer = **North**
+
+---
+
+## Type 2
+
+### Where is he from the starting point?
+
+Compare the remaining movements after cancellation.
+
+Example
+
+```
+North = 10
+
+South = 6
+
+Remaining = North 4
+
+East = 5
+```
+
+Answer = **North-East**
+
+---
+
+## Type 3
+
+### How far is he from the starting point?
+
+Use
+
+[
+\sqrt{(\text{Remaining North/South})^2+(\text{Remaining East/West})^2}
+]
+
+Example
+
+```
+North = 12
+
+East = 5
+```
+
+Distance
+
+```
+√(12²+5²)
+
+=13
+```
+
+---
+
+# 5. Pythagorean Triples (Memorize)
+
+These appear frequently in placement exams.
+
+| Horizontal | Vertical | Distance |
+| ---------- | -------- | -------: |
+| 3          | 4        |        5 |
+| 6          | 8        |       10 |
+| 5          | 12       |       13 |
+| 8          | 15       |       17 |
+| 7          | 24       |       25 |
+
+---
+
+# 6. Cancellation Trick
+
+```
+North 15
+
+South 15
+
+=0
+```
+
+```
+East 12
+
+West 5
+
+=East 7
+```
+
+Always cancel first.
+
+---
+
+# 7. Reading Trick
+
+Read **one instruction at a time**.
+
+❌ Don't read the whole paragraph.
+
+✅ Read.
+
+```
+Walk 8 North
+```
+
+Update.
+
+Then read.
+
+```
+Turn Right
+```
+
+Update.
+
+Then read.
+
+```
+Walk 5
+```
+
+Update.
+
+Repeat.
+
+---
+
+# 8. Most Common Mistakes
+
+❌ Looking at the last movement instead of the final position.
+
+Example
+
+```
+North 8
+
+East 6
+
+South 8
+```
+
+Wrong:
+
+```
+South
+```
+
+Correct:
+
+```
+East
+```
+
+Because North and South cancel.
+
+---
+
+❌ Forgetting to update the facing direction.
+
+Always update after every turn.
+
+---
+
+❌ Confusing **Facing** with **Position**.
+
+---
+
+# 9. Facing vs Position vs Distance
+
+Example
+
+Starts facing North.
+
+Walk 10 North.
+
+Right 5.
+
+Left 6.
+
+```
+Final Facing = North
+
+Final Position = North-East
+
+Distance = √(16²+5²)
+```
+
+Three different questions.
+
+---
+
+# 10. Shadow Questions (India)
+
+| Time    | Sun   | Shadow |
+| ------- | ----- | ------ |
+| Morning | East  | West   |
+| Evening | West  | East   |
+| Noon    | South | North  |
+
+*(For standard placement aptitude questions set in India.)*
+
+---
+
+# 11. Scorecard Method (Fastest Method)
+
+```
+N = 0
+
+S = 0
+
+E = 0
+
+W = 0
+```
+
+Example
+
+```
+Walk 10 North
+
+N = 10
+```
+
+```
+Walk 6 East
+
+E = 6
+```
+
+```
+Walk 10 South
+
+S = 10
+```
+
+Cancel.
+
+```
+N = 0
+
+E = 6
+```
+
+Answer = **East**
+
+---
+
+# 12. 20-Second Exam Checklist
+
+Before marking the answer, ask:
+
+✅ What is my final facing direction?
+
+✅ Cancel North vs South.
+
+✅ Cancel East vs West.
+
+✅ Are they asking:
+
+* Facing?
+* Final Position?
+* Distance?
+
+Only then choose the option.
+
+---
+
+# Placement Cheat Sheet
+
+```text
+RIGHT = Clockwise
+LEFT = Anti-clockwise
+
+Facing?
+→ Last direction faced.
+
+Position?
+→ Cancel N-S and E-W.
+
+Distance?
+→ √(Horizontal² + Vertical²)
+
+Memorize:
+3-4-5
+6-8-10
+5-12-13
+8-15-17
+7-24-25
+
+Morning → Shadow West
+Evening → Shadow East
+Noon (India) → Shadow North
+
+Never solve mentally.
+Use the N-S-E-W scorecard.
+```
+
+---
+
+## ⭐ This is the exact strategy you should follow in the exam
+
+1. **Write the current facing direction.**
+2. **Update it after every turn.**
+3. **Maintain the N/S/E/W scorecard.**
+4. **Cancel opposite directions.**
+5. **Read the last line carefully**:
+
+   * **Facing?** → Final facing direction.
+   * **From starting point?** → Final position after cancellation.
+   * **How far?** → Use the Pythagorean theorem.
+
+If you follow these five steps every time, you'll solve nearly every placement direction-sense question accurately and much faster.
