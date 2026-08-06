@@ -1,0 +1,530 @@
+# Coding–Decoding One Shot Notes (Placement Aptitude)
+
+## 1. What is Coding–Decoding?
+
+In coding-decoding questions, a word/sentence is changed into another form using a hidden rule.
+
+Your job:
+**Find the rule → Apply the same rule → Get the answer**
+
+Most placement questions are based on repeated patterns.
+
+---
+
+# 1. Alphabet Basics (Must Know)
+
+### Alphabet Positions
+
+```
+A B C D E F G H I J K L M
+1 2 3 4 5 6 7 8 9 10 11 12 13
+
+N O P Q R S T U V W X Y Z
+14 15 16 17 18 19 20 21 22 23 24 25 26
+```
+
+Remember:
+
+* A = 1
+* Z = 26
+
+---
+
+# Pattern 1: Letter Shifting ⭐⭐⭐⭐⭐
+
+Most common pattern.
+
+Letters move forward or backward.
+
+## Example:
+
+```
+CAT → DBU
+```
+
+Compare:
+
+```
+C → D (+1)
+A → B (+1)
+T → U (+1)
+```
+
+Rule:
+**Move every letter +1**
+
+Apply:
+
+```
+DOG
+
+D → E
+O → P
+G → H
+
+Answer: EPH
+```
+
+---
+
+## Common Shifts
+
+### Forward shift
+
+```
+A → B (+1)
+B → C (+1)
+```
+
+### Backward shift
+
+```
+D → C (-1)
+C → B (-1)
+```
+
+### Different shifts
+
+Example:
+
+```
+MANGO → NZOHQ
+```
+
+Check every letter separately.
+
+Possible pattern:
+
+```
+M→N (+1)
+A→Z (-1)
+N→O (+1)
+G→H (+1)
+O→Q (+2)
+```
+
+Never assume all letters follow the same shift.
+
+---
+
+# Pattern 2: Reverse Alphabet Coding ⭐⭐⭐⭐
+
+Opposite letters are used.
+
+Rule:
+
+```
+A ↔ Z
+B ↔ Y
+C ↔ X
+D ↔ W
+```
+
+Shortcut:
+
+```
+Letter position + Opposite position = 27
+```
+
+Example:
+
+```
+CAT
+```
+
+C = X
+A = Z
+T = G
+
+Answer:
+
+```
+XZG
+```
+
+---
+
+# Pattern 3: Alphabet Position Coding ⭐⭐⭐⭐⭐
+
+Letters are converted into numbers.
+
+Example:
+
+```
+DOG
+```
+
+D = 4
+O = 15
+G = 7
+
+Code:
+
+```
+4 15 7
+```
+
+---
+
+## Variations:
+
+### Sum of positions
+
+Example:
+
+```
+CAT
+```
+
+C = 3
+A = 1
+T = 20
+
+Total:
+
+3 + 1 + 20 = 24
+
+---
+
+### Product of positions
+
+Example:
+
+```
+AB
+```
+
+1 × 2 = 2
+
+---
+
+### Difference
+
+Example:
+
+```
+DOG
+```
+
+May ask:
+
+15 - 4 = 11
+
+Always check the question pattern.
+
+---
+
+# Pattern 4: Rearrangement Coding ⭐⭐⭐⭐⭐
+
+Letters are moved to different positions.
+
+Example:
+
+```
+TRAIN → NIART
+```
+
+Original:
+
+```
+T R A I N
+```
+
+Reverse:
+
+```
+N I A R T
+```
+
+Rule:
+Reverse the word.
+
+---
+
+Common rearrangements:
+
+## Reverse
+
+```
+APPLE → ELPPA
+```
+
+## First and last swap
+
+```
+TABLE
+
+E A B L T
+```
+
+## Odd-even arrangement
+
+Example:
+
+Positions:
+
+```
+1 2 3 4 5
+A B C D E
+```
+
+Odd letters:
+
+```
+A C E
+```
+
+Even letters:
+
+```
+B D
+```
+
+---
+
+# Pattern 5: Common Word Coding ⭐⭐⭐⭐⭐
+
+Used in sentence coding.
+
+Example:
+
+```
+red apple sweet → ka mi po
+
+red rose beautiful → la mi su
+```
+
+Common word:
+
+```
+red
+```
+
+Common code:
+
+```
+mi
+```
+
+Therefore:
+
+red = mi
+
+---
+
+## Method:
+
+1. Find repeated words.
+2. Find repeated codes.
+3. Match them.
+
+---
+
+# Pattern 6: Unknown Language Coding ⭐⭐⭐⭐⭐
+
+Example:
+
+```
+smart people work → ka mi po
+
+hard work success → ta po su
+```
+
+Common word:
+
+```
+work
+```
+
+Common code:
+
+```
+po
+```
+
+Answer:
+
+work = po
+
+---
+
+# Pattern 7: Substitution Coding ⭐⭐⭐
+
+The word meaning changes.
+
+Example:
+
+```
+If:
+pen is called book
+book is called paper
+```
+
+Question:
+
+"What do you write with?"
+
+Actual answer:
+
+Pen
+
+But according to coding:
+
+Pen = Book
+
+Answer:
+
+Book
+
+---
+
+# Pattern 8: Mixed Coding ⭐⭐⭐⭐⭐
+
+Combination of multiple rules.
+
+Example:
+
+```
+MACHINE → NBDIJOF
+```
+
+Possible operations:
+
+1. Shift letters
+2. Reverse
+3. Rearrange
+4. Convert to numbers
+
+Approach:
+
+Check in this order:
+
+1. Is it shifted?
+2. Is it reversed?
+3. Are positions swapped?
+4. Are numbers involved?
+
+---
+
+# Pattern 9: Number Coding ⭐⭐⭐⭐⭐
+
+Example:
+
+```
+BAT = 2120
+```
+
+B = 2
+A = 1
+T = 20
+
+Answer:
+
+```
+2 1 20
+```
+
+---
+
+# Fast Exam Strategy 🚀
+
+When you see a question:
+
+## Step 1:
+
+Compare first letter.
+
+Example:
+
+```
+CAT → DBU
+```
+
+C→D
+
+Shift found.
+
+---
+
+## Step 2:
+
+Check second letter.
+
+Confirm the rule.
+
+---
+
+## Step 3:
+
+If no shift:
+
+Try:
+
+1. Reverse alphabet
+2. Alphabet positions
+3. Rearrangement
+4. Common words
+
+---
+
+# Common Traps
+
+❌ Don't solve by meaning.
+
+Example:
+
+```
+DOG → ?
+```
+
+The answer is not related to dogs.
+
+Only the pattern matters.
+
+---
+
+❌ Don't assume every letter has the same operation.
+
+Some questions use:
+
+```
++1, -1, +2, -2
+```
+
+---
+
+❌ Don't spend too much time.
+
+If pattern is not visible in 30–40 seconds:
+Skip and return later.
+
+---
+
+# Placement Importance
+
+| Pattern            | Frequency |
+| ------------------ | --------- |
+| Letter shifting    | Very High |
+| Alphabet positions | Very High |
+| Common word coding | Very High |
+| Rearrangement      | High      |
+| Mixed coding       | High      |
+| Reverse alphabet   | Medium    |
+| Substitution       | Medium    |
+| Matrix coding      | Low       |
+
+---
+
+# Final Checklist Before Exam ✅
+
+You should be able to:
+
+✅ Convert letters to positions quickly
+✅ Identify +1/-1 shifts
+✅ Identify reverse alphabet
+✅ Solve sentence coding
+✅ Find common words/codes
+✅ Handle rearrangement
+✅ Solve mixed patterns
+
+Master these and coding-decoding becomes a **1–2 minute scoring topic** in placement tests.
