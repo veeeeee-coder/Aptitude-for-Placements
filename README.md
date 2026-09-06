@@ -1,14 +1,16 @@
-COMPLETE APTITUDE & PLACEMENT TEST SYLLABUS
-Quantitative Aptitude / Numerical Ability
-Logical Reasoning
-Analytical Reasoning
-Verbal Ability
-Data Interpretation
-Data Sufficiency
-Non-Verbal Reasoning
-Basic Mathematics / Arithmetic
-Puzzles
-Sometimes: Technical Aptitude & Pseudocode
+## COMPLETE APTITUDE & PLACEMENT TEST SYLLABUS
+
+- Quantitative Aptitude / Numerical Ability
+- Logical Reasoning
+- Analytical Reasoning
+- Verbal Ability
+- Data Interpretation
+- Data Sufficiency
+- Non-Verbal Reasoning
+- Basic Mathematics / Arithmetic
+- Puzzles
+- Technical Aptitude
+- Pseudocode
 
 
 
